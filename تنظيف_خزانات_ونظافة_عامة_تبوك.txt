@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="خدمات تنظيف خزانات ونظافة عامة في تبوك للشقق والفلل والمجالس والمنازل."
+    />
+    <meta name="theme-color" content="#0c5274" />
+    <title>تنظيف خزانات ونظافة عامة بتبوك | خدمة شاملة</title>
+    <style>
+      :root {
+        --ink: #153247;
+        --muted: #637887;
+        --navy: #0c5274;
+        --navy-dark: #073851;
+        --aqua: #15b9af;
+        --mint: #dff8ee;
+        --yellow: #ffd76a;
+        --coral: #ff8067;
+        --paper: #fffdf8;
+        --line: rgba(21, 50, 71, 0.1);
+        --shadow: 0 24px 70px rgba(14, 57, 80, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 12%, rgba(255, 215, 106, 0.34) 0 8rem, transparent 8.1rem),
+          radial-gradient(circle at 94% 54%, rgba(21, 185, 175, 0.12) 0 15rem, transparent 15.1rem),
+          #eff8f5;
+        font-family: Tahoma, Arial, sans-serif;
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page-shell {
+        width: min(1180px, calc(100% - 32px));
+        margin: 24px auto 34px;
+      }
+
+      .flyer {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.82);
+        border-radius: 30px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .flyer::before,
+      .flyer::after {
+        position: absolute;
+        z-index: 0;
+        border-radius: 50%;
+        content: "";
+        pointer-events: none;
+      }
+
+      .flyer::before {
+        top: -180px;
+        left: -120px;
+        width: 350px;
+        height: 350px;
+        background: rgba(255, 215, 106, 0.22);
+      }
+
+      .flyer::after {
+        right: -180px;
+        bottom: 180px;
+        width: 450px;
+        height: 450px;
+        background: rgba(21, 185, 175, 0.07);
+      }
+
+      .topbar {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 19px clamp(20px, 4vw, 52px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 900;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 45px;
+        height: 45px;
+        place-items: center;
+        border-radius: 15px;
+        color: white;
+        background: linear-gradient(145deg, var(--aqua), var(--navy));
+        box-shadow: 0 9px 18px rgba(12, 82, 116, 0.2);
+      }
+
+      .brand-mark svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .brand-copy {
+        display: grid;
+        gap: 0;
+        line-height: 1.25;
+      }
+
+      .brand-copy strong {
+        font-size: 0.98rem;
+      }
+
+      .brand-copy span {
+        color: var(--aqua);
+        font-size: 0.72rem;
+        font-weight: 700;
+      }
+
+      .quick-call {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--navy);
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .quick-call svg {
+        width: 19px;
+        height: 19px;
+      }
+
+      .hero {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        align-items: center;
+        gap: clamp(26px, 5vw, 74px);
+        padding: clamp(34px, 6vw, 82px) clamp(20px, 7vw, 82px) 62px;
+      }
+
+      .hero-copy {
+        max-width: 650px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 17px;
+        padding: 7px 13px;
+        border-radius: 99px;
+        color: #25716d;
+        background: var(--mint);
+        font-size: 0.85rem;
+        font-weight: 800;
+      }
+
+      .eyebrow::before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--coral);
+        box-shadow: 0 0 0 5px rgba(255, 128, 103, 0.13);
+        content: "";
+      }
+
+      h1 {
+        max-width: 700px;
+        margin: 0;
+        color: var(--navy-dark);
+        font-size: clamp(2.18rem, 5vw, 4.65rem);
+        font-weight: 900;
+        letter-spacing: -0.055em;
+        line-height: 1.1;
+      }
+
+      h1 .highlight {
+        position: relative;
+        display: inline-block;
+        color: var(--coral);
+      }
+
+      h1 .highlight::after {
+        position: absolute;
+        right: 0;
+        bottom: -8px;
+        left: 9%;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--yellow);
+        content: "";
+        transform: rotate(-1deg);
+      }
+
+      .hero-description {
+        max-width: 570px;
+        margin: 25px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.7vw, 1.17rem);
+      }
+
+      .location-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 21px 0 0;
+      }
+
+      .location-pills span {
+        padding: 8px 13px;
+        border: 1px solid rgba(12, 82, 116, 0.13);
+        border-radius: 10px;
+        color: var(--navy);
+        background: #f2fbfa;
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin-top: 29px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 52px;
+        padding: 12px 20px;
+        border: 0;
+        border-radius: 14px;
+        font-size: 0.97rem;
+        font-weight: 900;
+        transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+      }
+
+      .btn:hover,
+      .btn:focus-visible {
+        filter: brightness(1.04);
+        transform: translateY(-3px);
+      }
+
+      .btn:focus-visible,
+      .floating-action:focus-visible,
+      .designer-credit a:focus-visible {
+        outline: 3px solid rgba(255, 128, 103, 0.55);
+        outline-offset: 3px;
+      }
+
+      .btn svg {
+        width: 19px;
+        height: 19px;
+        flex: 0 0 auto;
+      }
+
+      .btn-primary {
+        color: white;
+        background: var(--navy);
+        box-shadow: 0 12px 22px rgba(12, 82, 116, 0.2);
+      }
+
+      .btn-whatsapp {
+        color: white;
+        background: #16a66d;
+        box-shadow: 0 12px 22px rgba(22, 166, 109, 0.2);
+      }
+
+      .hero-art {
+        position: relative;
+        min-height: 410px;
+      }
+
+      .art-halo {
+        position: absolute;
+        inset: 22px 0 0;
+        border-radius: 45% 55% 48% 52%;
+        background: linear-gradient(140deg, #d9f8ed, #b4e7e7);
+        transform: rotate(7deg);
+      }
+
+      .art-card {
+        position: absolute;
+        z-index: 1;
+        inset: 45px 4% 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 28px;
+        border-radius: 30px;
+        color: white;
+        background:
+          linear-gradient(145deg, rgba(7, 56, 81, 0.96), rgba(12, 82, 116, 0.88)),
+          var(--navy);
+        box-shadow: 0 25px 38px rgba(7, 56, 81, 0.22);
+      }
+
+      .art-card::before {
+        position: absolute;
+        right: -37px;
+        bottom: -56px;
+        width: 210px;
+        height: 210px;
+        border: 23px solid rgba(255, 215, 106, 0.85);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .art-card::after {
+        position: absolute;
+        top: 28px;
+        left: 34px;
+        width: 76px;
+        height: 76px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 50%;
+        box-shadow: 0 0 0 13px rgba(255, 255, 255, 0.06);
+        content: "";
+      }
+
+      .sparkle {
+        position: absolute;
+        z-index: 2;
+        color: var(--yellow);
+        font-size: 1.7rem;
+        line-height: 1;
+      }
+
+      .sparkle.one {
+        top: 18px;
+        right: 8%;
+      }
+
+      .sparkle.two {
+        bottom: 22%;
+        left: 1%;
+        color: var(--coral);
+        font-size: 1.15rem;
+      }
+
+      .art-top,
+      .art-bottom {
+        position: relative;
+        z-index: 1;
+      }
+
+      .art-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .art-top small {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.77rem;
+        font-weight: 700;
+      }
+
+      .art-badge {
+        padding: 7px 11px;
+        border-radius: 99px;
+        color: var(--navy-dark);
+        background: var(--yellow);
+        font-size: 0.77rem;
+        font-weight: 900;
+      }
+
+      .art-bottom strong {
+        display: block;
+        max-width: 280px;
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .art-bottom p {
+        max-width: 300px;
+        margin: 10px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.91rem;
+      }
+
+      .shine-icon {
+        display: grid;
+        width: 78px;
+        height: 78px;
+        margin-bottom: 22px;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 24px;
+        color: var(--yellow);
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .shine-icon svg {
+        width: 44px;
+        height: 44px;
+      }
+
+      .section {
+        position: relative;
+        z-index: 1;
+        padding: 10px clamp(20px, 7vw, 82px) 60px;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 22px;
+      }
+
+      .section-heading h2 {
+        margin: 0;
+        color: var(--navy-dark);
+        font-size: clamp(1.5rem, 3vw, 2.2rem);
+        letter-spacing: -0.04em;
+        line-height: 1.2;
+      }
+
+      .section-heading p {
+        max-width: 350px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .service-item {
+        min-height: 154px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.74);
+        transition: transform 180ms ease, box-shadow 180ms ease;
+      }
+
+      .service-item:hover {
+        box-shadow: 0 13px 24px rgba(12, 82, 116, 0.09);
+        transform: translateY(-4px);
+      }
+
+      .service-icon {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        margin-bottom: 15px;
+        place-items: center;
+        border-radius: 13px;
+        color: var(--navy);
+        background: #e1f7f0;
+      }
+
+      .service-item:nth-child(2) .service-icon {
+        color: #b45a3d;
+        background: #fff0cd;
+      }
+
+      .service-item:nth-child(3) .service-icon {
+        color: #8850a5;
+        background: #f4e7fa;
+      }
+
+      .service-item:nth-child(4) .service-icon {
+        color: #23749a;
+        background: #dff1fc;
+      }
+
+      .service-icon svg {
+        width: 21px;
+        height: 21px;
+      }
+
+      .service-item h3 {
+        margin: 0 0 4px;
+        font-size: 1rem;
+      }
+
+      .service-item p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.55;
+      }
+
+      .benefits-strip {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px;
+        margin: 10px 0 0;
+        padding: 20px;
+        border-radius: 22px;
+        color: white;
+        background: var(--navy);
+      }
+
+      .benefit {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 5px 11px;
+      }
+
+      .benefit:not(:last-child) {
+        border-left: 1px solid rgba(255, 255, 255, 0.17);
+      }
+
+      .check {
+        display: grid;
+        width: 31px;
+        height: 31px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--navy-dark);
+        background: var(--yellow);
+        font-weight: 900;
+      }
+
+      .benefit strong {
+        display: block;
+        font-size: 0.9rem;
+      }
+
+      .benefit span {
+        display: block;
+        margin-top: 1px;
+        color: rgba(255, 255, 255, 0.68);
+        font-size: 0.75rem;
+      }
+
+      .reviews-section {
+        display: grid;
+        grid-template-columns: 0.72fr 1.28fr;
+        align-items: stretch;
+        gap: 24px;
+      }
+
+      .rating-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 27px;
+        border-radius: 22px;
+        color: white;
+        background: linear-gradient(150deg, #ff896b, #df5b69);
+        box-shadow: 0 17px 26px rgba(223, 91, 105, 0.17);
+      }
+
+      .rating-card .stars {
+        color: var(--yellow);
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+      }
+
+      .rating-card strong {
+        margin-top: 8px;
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .rating-card p {
+        margin: 10px 0 0;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.9rem;
+      }
+
+      .review-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .review {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 19px;
+        background: #fff;
+      }
+
+      .review-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+
+      .reviewer {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 900;
+      }
+
+      .avatar {
+        display: grid;
+        width: 35px;
+        height: 35px;
+        place-items: center;
+        border-radius: 50%;
+        color: var(--navy);
+        background: var(--mint);
+        font-size: 0.82rem;
+      }
+
+      .review:nth-child(2) .avatar {
+        color: #9a5d22;
+        background: #fff1c9;
+      }
+
+      .review .mini-stars {
+        color: #edae32;
+        font-size: 0.78rem;
+        white-space: nowrap;
+      }
+
+      .review p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+        line-height: 1.7;
+      }
+
+      .cta {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22px;
+        overflow: hidden;
+        padding: 26px 28px;
+        border-radius: 22px;
+        color: white;
+        background: linear-gradient(120deg, var(--navy-dark), var(--navy));
+      }
+
+      .cta::after {
+        position: absolute;
+        top: -80px;
+        left: 15%;
+        width: 190px;
+        height: 190px;
+        border: 24px solid rgba(21, 185, 175, 0.24);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .cta-copy,
+      .cta-action {
+        position: relative;
+        z-index: 1;
+      }
+
+      .cta h2 {
+        margin: 0;
+        font-size: clamp(1.35rem, 3vw, 2rem);
+        line-height: 1.25;
+      }
+
+      .cta p {
+        margin: 6px 0 0;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.88rem;
+      }
+
+      .cta .btn {
+        min-width: 190px;
+        color: var(--navy-dark);
+        background: var(--yellow);
+      }
+
+      .footer {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 0 clamp(20px, 7vw, 82px);
+        padding: 22px 0 29px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .designer-credit {
+        color: var(--navy);
+        font-weight: 800;
+      }
+
+      .designer-credit a {
+        color: #15905f;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .floating-actions {
+        position: fixed;
+        z-index: 20;
+        top: 50%;
+        left: 0;
+        display: grid;
+        gap: 8px;
+        transform: translateY(-50%);
+      }
+
+      .floating-action {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 49px;
+        padding: 11px 12px 11px 14px;
+        border-radius: 0 15px 15px 0;
+        color: white;
+        box-shadow: 4px 6px 17px rgba(11, 53, 72, 0.2);
+        font-size: 0.77rem;
+        font-weight: 900;
+        transition: min-width 180ms ease, filter 180ms ease;
+      }
+
+      .floating-action:hover {
+        min-width: 108px;
+        filter: brightness(1.08);
+      }
+
+      .floating-action svg {
+        width: 24px;
+        height: 24px;
+        flex: 0 0 auto;
+      }
+
+      .floating-action span {
+        overflow: hidden;
+        max-width: 0;
+        white-space: nowrap;
+        transition: max-width 180ms ease;
+      }
+
+      .floating-action:hover span {
+        max-width: 65px;
+      }
+
+      .floating-whatsapp {
+        background: #16a66d;
+      }
+
+      .floating-call {
+        background: #1b83c2;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy {
+          max-width: none;
+          text-align: center;
+        }
+
+        .hero-description {
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        .location-pills,
+        .hero-actions {
+          justify-content: center;
+        }
+
+        .hero-art {
+          width: min(560px, 100%);
+          min-height: 390px;
+          margin: 0 auto;
+        }
+
+        .reviews-section {
+          grid-template-columns: 1fr;
+        }
+
+        .rating-card {
+          min-height: 210px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .page-shell {
+          width: min(100% - 14px, 600px);
+          margin-top: 7px;
+        }
+
+        .flyer {
+          border-radius: 22px;
+        }
+
+        .topbar {
+          padding: 14px 16px;
+        }
+
+        .quick-call {
+          font-size: 0;
+        }
+
+        .quick-call svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        .hero {
+          gap: 18px;
+          padding: 38px 18px 38px;
+        }
+
+        h1 {
+          font-size: clamp(2.05rem, 12vw, 3.35rem);
+        }
+
+        .hero-actions {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .btn {
+          padding-right: 12px;
+          padding-left: 12px;
+          font-size: 0.85rem;
+        }
+
+        .hero-art {
+          min-height: 320px;
+        }
+
+        .art-card {
+          inset: 35px 0 0;
+          padding: 22px;
+        }
+
+        .shine-icon {
+          width: 62px;
+          height: 62px;
+          margin-bottom: 15px;
+        }
+
+        .shine-icon svg {
+          width: 35px;
+          height: 35px;
+        }
+
+        .art-bottom strong {
+          font-size: 2.1rem;
+        }
+
+        .section {
+          padding: 5px 18px 40px;
+        }
+
+        .section-heading {
+          display: block;
+        }
+
+        .section-heading h2 {
+          margin-bottom: 8px;
+        }
+
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .service-item {
+          min-height: 144px;
+          padding: 14px;
+        }
+
+        .benefits-strip {
+          grid-template-columns: 1fr;
+          gap: 4px;
+          padding: 15px;
+        }
+
+        .benefit {
+          padding: 6px;
+        }
+
+        .benefit:not(:last-child) {
+          border-left: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+          padding-bottom: 12px;
+        }
+
+        .review-list {
+          grid-template-columns: 1fr;
+        }
+
+        .cta {
+          display: block;
+          padding: 23px 20px;
+        }
+
+        .cta .btn {
+          width: 100%;
+          margin-top: 18px;
+        }
+
+        .footer {
+          display: block;
+          margin: 0 18px;
+          padding-bottom: 21px;
+          text-align: center;
+        }
+
+        .footer > * + * {
+          margin-top: 7px;
+        }
+
+        .floating-actions {
+          top: auto;
+          right: 10px;
+          bottom: 12px;
+          left: auto;
+          display: flex;
+          gap: 8px;
+          transform: none;
+        }
+
+        .floating-action {
+          min-width: 0;
+          padding: 10px;
+          border-radius: 50%;
+        }
+
+        .floating-action:hover {
+          min-width: 0;
+        }
+
+        .floating-action span {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+    <!-- TikTok Pixel Code Start -->
+    <script>
+      !function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = w[t] = w[t] || [];
+        ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
+        ttq.setAndDefer = function (t, e) {
+          t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+          };
+        };
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        };
+        ttq.load = function (e, n) {
+          var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner;
+          ttq._i = ttq._i || {};
+          ttq._i[e] = [];
+          ttq._i[e]._u = r;
+          ttq._t = ttq._t || {};
+          ttq._t[e] = +new Date;
+          ttq._o = ttq._o || {};
+          ttq._o[e] = n || {};
+          n = document.createElement("script");
+          n.type = "text/javascript";
+          n.async = !0;
+          n.src = r + "?sdkid=" + e + "&lib=" + t;
+          e = document.getElementsByTagName("script")[0];
+          e.parentNode.insertBefore(n, e);
+        };
+        ttq.load("D8M8TKJC77UAV4NU389G");
+        ttq.page();
+      }(window, document, "ttq");
+    </script>
+    <!-- TikTok Pixel Code End -->
+  </head>
+  <body>
+    <div class="floating-actions" aria-label="خيارات التواصل السريع">
+      <a
+        class="floating-action floating-whatsapp"
+        href="https://wa.me/966541097245?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20أو%20نظافة%20عامة%20في%20تبوك"
+        target="_blank"
+        rel="noopener"
+        aria-label="تواصل عبر واتساب"
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20.2 3.8A10.2 10.2 0 0 0 4.08 16.12L3 21l4.99-1.06A10.2 10.2 0 1 0 20.2 3.8Z" stroke="currentColor" stroke-width="1.8" />
+          <path d="M8.2 7.7c.2-.45.38-.47.7-.48h.54c.16 0 .33.06.44.34l.7 1.7c.09.22.06.4-.07.56l-.57.73c-.13.16-.18.3-.07.5.2.39.62 1.2 1.34 1.9.73.72 1.58 1.17 2 1.37.2.1.35.08.48-.08l.69-.8c.15-.18.32-.22.55-.13l1.68.8c.23.1.36.17.4.3.04.14.04.83-.2 1.17-.24.33-.92.62-1.27.66-.33.04-.76.04-1.23-.1-.28-.09-.63-.21-1.09-.41-1.9-.82-3.13-2.76-3.23-2.88-.1-.13-.77-1.02-.77-1.94 0-.92.48-1.37.66-1.56Z" fill="currentColor" />
+        </svg>
+        <span>واتساب</span>
+      </a>
+      <a class="floating-action floating-call" href="tel:0541097245" aria-label="اتصل الآن">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6.6 3.5 4.8 4.2c-.8.3-1.3 1.1-1.2 2 .4 3.4 1.9 6.7 4.4 9.2 2.5 2.5 5.8 4 9.2 4.4.9.1 1.7-.4 2-1.2l.7-1.8c.2-.6 0-1.3-.6-1.6l-2.9-1.5c-.5-.3-1.2-.1-1.5.3l-1.1 1.3a13 13 0 0 1-4.6-4.6l1.3-1.1c.4-.4.5-1 .3-1.5L9.3 4.1c-.3-.6-1-.8-1.6-.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+        </svg>
+        <span>اتصال</span>
+      </a>
+    </div>
+
+    <main class="page-shell">
+      <div class="flyer">
+        <header class="topbar">
+          <a class="brand" href="#top" aria-label="الرئيسية">
+            <span class="brand-mark">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3.2 13.35 8 18 9.4l-4.65 1.4L12 15l-1.35-4.2L6 9.4 10.65 8 12 3.2Z" fill="currentColor" />
+                <path d="m18.3 14.2.65 2.25 2.25.65-2.25.65-.65 2.25-.65-2.25-2.25-.65 2.25-.65.65-2.25ZM5.3 14.5l.48 1.65 1.65.48-1.65.48-.48 1.65-.48-1.65-1.65-.48 1.65-.48.48-1.65Z" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="brand-copy">
+              <strong>لمعة ونظافة</strong>
+              <span>خدمة موثوقة • نتيجة تلمع</span>
+            </span>
+          </a>
+          <a class="quick-call" href="tel:0541097245">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6.6 3.5 4.8 4.2c-.8.3-1.3 1.1-1.2 2 .4 3.4 1.9 6.7 4.4 9.2 2.5 2.5 5.8 4 9.2 4.4.9.1 1.7-.4 2-1.2l.7-1.8c.2-.6 0-1.3-.6-1.6l-2.9-1.5c-.5-.3-1.2-.1-1.5.3l-1.1 1.3a13 13 0 0 1-4.6-4.6l1.3-1.1c.4-.4.5-1 .3-1.5L9.3 4.1c-.3-.6-1-.8-1.6-.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+            </svg>
+            <span>0541097245</span>
+          </a>
+        </header>
+
+        <section class="hero" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">نظافة تريحك ونتيجة تفرحك</p>
+            <h1>تنظيف خزانات ونظافة عامة <span class="highlight">بتبوك</span></h1>
+            <p class="hero-description">
+              تنظيف خزانات ونظافة عامة للشقق والفلل والمجالس والمنازل في تبوك.
+              نصل إليك بعناية، ونترك المكان أنظف وأجمل.
+            </p>
+            <div class="location-pills" aria-label="المدن التي نخدمها">
+              <span>تبوك</span>
+              <span>تنظيف خزانات</span>
+              <span>نظافة عامة</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:0541097245">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.6 3.5 4.8 4.2c-.8.3-1.3 1.1-1.2 2 .4 3.4 1.9 6.7 4.4 9.2 2.5 2.5 5.8 4 9.2 4.4.9.1 1.7-.4 2-1.2l.7-1.8c.2-.6 0-1.3-.6-1.6l-2.9-1.5c-.5-.3-1.2-.1-1.5.3l-1.1 1.3a13 13 0 0 1-4.6-4.6l1.3-1.1c.4-.4.5-1 .3-1.5L9.3 4.1c-.3-.6-1-.8-1.6-.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+                اتصل الآن
+              </a>
+              <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/966541097245?text=السلام%20عليكم،%20أرغب%20في%20طلب%20خدمة%20تنظيف%20خزانات%20أو%20نظافة%20عامة%20في%20تبوك"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M20.2 3.8A10.2 10.2 0 0 0 4.08 16.12L3 21l4.99-1.06A10.2 10.2 0 1 0 20.2 3.8Z" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M8.2 7.7c.2-.45.38-.47.7-.48h.54c.16 0 .33.06.44.34l.7 1.7c.09.22.06.4-.07.56l-.57.73c-.13.16-.18.3-.07.5.2.39.62 1.2 1.34 1.9.73.72 1.58 1.17 2 1.37.2.1.35.08.48-.08l.69-.8c.15-.18.32-.22.55-.13l1.68.8c.23.1.36.17.4.3.04.14.04.83-.2 1.17-.24.33-.92.62-1.27.66-.33.04-.76.04-1.23-.1-.28-.09-.63-.21-1.09-.41-1.9-.82-3.13-2.76-3.23-2.88-.1-.13-.77-1.02-.77-1.94 0-.92.48-1.37.66-1.56Z" fill="currentColor" />
+                </svg>
+                راسلنا واتساب
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="تنظيف يترك لمعة واضحة">
+            <div class="art-halo"></div>
+            <span class="sparkle one">✦</span>
+            <span class="sparkle two">✧</span>
+            <div class="art-card">
+              <div class="art-top">
+                <small>نظافة من أول زيارة</small>
+                <span class="art-badge">خدمة شاملة</span>
+              </div>
+              <div class="art-bottom">
+                <div class="shine-icon">
+                  <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                    <path d="M24 5 26.8 17.2 38 21l-11.2 3.8L24 37l-2.8-12.2L10 21l11.2-3.8L24 5Z" fill="currentColor" />
+                    <path d="m39 29 .9 3.1L43 33l-3.1.9L39 37l-.9-3.1L35 33l3.1-.9L39 29ZM10 29l.8 2.2L13 32l-2.2.8L10 35l-.8-2.2L7 32l2.2-.8L10 29Z" fill="currentColor" />
+                  </svg>
+                </div>
+                <strong>لمعة تدوم<br />وثقة تستحقها</strong>
+                <p>أيدي أمينة، اهتمام بالتفاصيل، وحرص على نظافة كل زاوية.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="section-heading">
+            <div>
+              <h2>كل خدمات النظافة في مكان واحد</h2>
+            </div>
+            <p>نرتّب التفاصيل الصغيرة لتشعر بالفرق الكبير في بيتك.</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-item">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M7 8h10M9 16h6M12 4v16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>تنظيف الخزانات</h3>
+              <p>تنظيف دقيق للخزانات والعناية بها لإزالة الرواسب والأوساخ.</p>
+            </article>
+            <article class="service-item">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m13 3-8 10h6l-1 8 8-11h-6l1-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>نظافة عامة</h3>
+              <p>تنظيف شامل للمنازل والشقق والفلل بمختلف المساحات.</p>
+            </article>
+            <article class="service-item">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 18V9l8-5 8 5v9M3 18h18M7 18v-5h10v5M9 10h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>تنظيف المجالس</h3>
+              <p>تنظيف المجالس ضمن خدمات النظافة العامة في تبوك.</p>
+            </article>
+            <article class="service-item">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 20V9l8-5 8 5v11M7 20v-6h10v6M10 10h4M12 4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>تنظيف المنازل</h3>
+              <p>نظافة عامة متكاملة للمنزل من المدخل حتى آخر غرفة.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="benefits-strip">
+            <div class="benefit">
+              <span class="check">✓</span>
+              <div>
+                <strong>مواعيد مرنة</strong>
+                <span>نرتب الزيارة بما يناسبك</span>
+              </div>
+            </div>
+            <div class="benefit">
+              <span class="check">✓</span>
+              <div>
+                <strong>اهتمام بالتفاصيل</strong>
+                <span>نظافة تشوفها وتحسها</span>
+              </div>
+            </div>
+            <div class="benefit">
+              <span class="check">✓</span>
+              <div>
+                <strong>خدمة موثوقة</strong>
+                <span>نتيجة تليق ببيتك</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reviews-section" id="reviews">
+          <div class="rating-card">
+            <div class="stars" aria-label="تقييم خمس نجوم">★★★★★</div>
+            <strong>5.0</strong>
+            <p>رضا عملائنا هو أجمل لمعة في خدمتنا.</p>
+          </div>
+          <div>
+            <div class="section-heading">
+              <div>
+                <h2>ماذا قال عملاؤنا؟</h2>
+              </div>
+            </div>
+            <div class="review-list">
+              <article class="review">
+                <div class="review-top">
+                  <div class="reviewer"><span class="avatar">س</span> سارة</div>
+                  <span class="mini-stars">★★★★★</span>
+                </div>
+                <p>شغل مرتب وسريع، والخزان صار أنظف بكثير. أشكر الفريق على التعامل الراقي.</p>
+              </article>
+              <article class="review">
+                <div class="review-top">
+                  <div class="reviewer"><span class="avatar">م</span> محمد</div>
+                  <span class="mini-stars">★★★★★</span>
+                </div>
+                <p>طلبت تنظيف الفيلا والمجلس، والنتيجة ممتازة جدًا. أكيد راح أتعامل معهم مرة ثانية.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="cta">
+            <div class="cta-copy">
+              <h2>جاهز تشوف الفرق؟</h2>
+              <p>تواصل معنا الآن واحجز موعد التنظيف المناسب لك.</p>
+            </div>
+            <div class="cta-action">
+              <a class="btn" href="tel:0541097245">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.6 3.5 4.8 4.2c-.8.3-1.3 1.1-1.2 2 .4 3.4 1.9 6.7 4.4 9.2 2.5 2.5 5.8 4 9.2 4.4.9.1 1.7-.4 2-1.2l.7-1.8c.2-.6 0-1.3-.6-1.6l-2.9-1.5c-.5-.3-1.2-.1-1.5.3l-1.1 1.3a13 13 0 0 1-4.6-4.6l1.3-1.1c.4-.4.5-1 .3-1.5L9.3 4.1c-.3-.6-1-.8-1.6-.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                </svg>
+                0541097245
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <span>© 2026 تنظيف خزانات ونظافة عامة بتبوك — جميع الحقوق محفوظة</span>
+          <span class="designer-credit">
+            تم التصميم بواسطة
+            <a href="https://wa.me/201029095046?text=مرحبًا%20م.%20نجوى،%20أرغب%20في%20التواصل%20بخصوص%20التصميم" target="_blank" rel="noopener">م. نجوى إبراهيم</a>
+          </span>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
